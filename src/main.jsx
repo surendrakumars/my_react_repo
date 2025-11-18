@@ -1,0 +1,11 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <h1>Hello how are you</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est suscipit temporibus in, dolore, natus eveniet aliquid id corrupti quia repellendus nostrum placeat ea, architecto atque asperiores doloremque inventore quae voluptatum?</p>
+  </StrictMode>,
+)
