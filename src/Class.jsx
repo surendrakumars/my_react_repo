@@ -3,13 +3,17 @@ import React from 'react';
 class MyClassComponent extends React.Component{
     constructor(props){
         super(props);
-        this.state = {message:"this is a hello from class component"};
+        this.state = {value:0,newVal:0};
     }
     render(){
         return(
             <div>
-                <h1>{this.state.message}</h1>
-                <p>Props value: {this.props.name}</p>   
+                <button onClick={()=>this.setState({value:this.state.value+1})}
+                >+</button>
+                <p name="value">{this.state.value}</p>
+                <button onClick={()=>this.setState({value:this.state.value-1})}
+                >+</button>
+                <p name="newVal">{this.state.newValue}</p>
             </div>
         )
     }
