@@ -8,14 +8,12 @@ class MyClassComponent extends React.Component{
     render(){
         return(
             <div>
-                <button onClick={()=>this.setState({value:this.state.value+1})}
-                >+</button>
-                <p name="value">{this.state.value}</p>
-                <button onClick={()=>this.setState({value:this.state.value-1})}
-                >+</button>
-                <p name="newVal">{this.state.newValue}</p>
+                <h1>hello how are you doing</h1>
             </div>
         )
+    }
+    componentDidMount(){
+        console.log("component successfully mounted");
     }
 }
 export default MyClassComponent;
